@@ -5,6 +5,6 @@ dirname="$(dirname "$0")"
 
 in="$dirname/../$1"
 out="$dirname/../bundle"
-rm "$out"
+[ -f "$out" ] && rm "$out"
 rustc "$in" -o "$out"
 "$out"
