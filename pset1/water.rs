@@ -9,13 +9,15 @@
 // bottles: 120
 //
 // a 1-minute shower is akin to using 192 ÷ 16 = 12 bottles of water
+//
+// http://stackoverflow.com/questions/28528998/how-do-i-read-a-single-string-from-standard-input
 
 use std::io;
 use std::io::prelude::*;
 
 fn main () {
+  let mut line = String::new();
   let stdin = io::stdin();
-  for line in stdin.lock().lines() {
-    println!("{}", line.unwrap());
-  }
+
+  stdin.lock().read_line(&mut line).unwrap();
 }
