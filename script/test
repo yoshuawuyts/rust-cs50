@@ -1,0 +1,10 @@
+#!/bin/sh
+dirname="$(dirname "$0")"
+
+[ $# -ne 1 ] && { printf 'usage: start <weekno>\n'; exit 1; }
+
+in="$dirname/../$1"
+out="$dirname/../bundle"
+rm "$out"
+rustc "$in" -o "$out" --test
+"$out"
