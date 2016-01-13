@@ -16,8 +16,20 @@ use std::io;
 use std::io::prelude::*;
 
 fn main () {
-  let mut line = String::new();
-  let stdin = io::stdin();
+  let num = compute();
+  println!("bottles: {}", num);
 
-  stdin.lock().read_line(&mut line).unwrap();
+  fn compute () -> i32 {
+    print!("minutes: ");
+    io::stdout().flush().unwrap();
+
+    let mut line = String::new();
+    let stdin = io::stdin();
+    stdin.lock().read_line(&mut line).unwrap();
+
+    match line.parse::<i32>() {
+      Ok(n) => n * 12,
+      Err(_) => compute(),
+    }
+  }
 }
