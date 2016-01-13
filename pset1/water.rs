@@ -29,7 +29,10 @@ fn main () {
 
     match line.trim().parse::<i32>() {
       Ok(n) => n * 12,
-      Err(_) => compute(),
+      Err(_) => {
+        println!("Incorrect input type, try again");
+        compute()
+      },
     }
   }
 }
