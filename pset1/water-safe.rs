@@ -16,8 +16,7 @@ use std::io;
 use std::io::prelude::*;
 
 fn main () {
-  let mut done = false;
-  while !done {
+  loop {
     print!("minutes: ");
     io::stdout().flush().unwrap();
 
@@ -28,13 +27,9 @@ fn main () {
     match line.trim().parse::<i32>() {
       Err(_) => println!("Incorrect input type, try again"),
       Ok(n) => {
-        done = true;
-        print(n * 12)
+        println!("bottles: {}", n * 12);
+        break;
       },
     }
-  }
-
-  fn print (num: i32) {
-    println!("bottles: {}", num);
   }
 }
