@@ -8,6 +8,9 @@ language built for the same purpose.
 - run basic cli commands (ls, cd, lang compilers)
 - print to stdout
 - read from stdin, basic math, write to stdout
+- match actions based on types
+- basic control flow (if statements, while loops, for loops)
+- cast types
 
 ## See Also
 - [edx.com/cs50](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x)
