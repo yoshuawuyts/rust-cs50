@@ -1,7 +1,7 @@
 # rust-cs50
 Back in uni I learned C by doing Harvard's CS50 course. Now I'm learning Rust
-and I figured I might as well progress do the same exercises using a language
-built for the same purpose.
+and I figured I might as well progress doing the same exercises using a
+language built for the same purpose.
 
 ## psets
 ### pset1
