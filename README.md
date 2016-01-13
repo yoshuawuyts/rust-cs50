@@ -11,6 +11,8 @@ built for the same purpose.
 
 ## See Also
 - [edx.com/cs50](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x)
+- [harvard quick reference](https://cs50.harvard.edu/resources/cppreference.com)
+- [the GNU Library manual](http://www.gnu.org/software/libc/manual/html_node)
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
