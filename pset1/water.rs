@@ -27,7 +27,7 @@ fn main () {
     let stdin = io::stdin();
     stdin.lock().read_line(&mut line).unwrap();
 
-    match line.parse::<i32>() {
+    match line.trim().parse::<i32>() {
       Ok(n) => n * 12,
       Err(_) => compute(),
     }
