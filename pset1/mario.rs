@@ -18,7 +18,7 @@ fn main () {
     stdin.lock().read_line(&mut line).unwrap();
 
     // handle input err cases
-    let height: i32 = match line.trim().parse::<i32>() {
+    let height: i32 = match line.trim().parse() {
       Err(_) => {
         println!("Input must be a number");
         continue;
